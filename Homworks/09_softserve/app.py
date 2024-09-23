@@ -3,7 +3,7 @@
 #SoftDev
 #K09 -- Putting occupations on a website
 #2024-09-23
-#time spent:
+#time spent: .5 hours
 import random as r
 def pickrand():
     f = open("occupations.csv", "r")
