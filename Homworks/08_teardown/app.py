@@ -5,12 +5,12 @@ DISCO:
 <note any discoveries you made here... no matter how small!>
 
 QCC:
-0. 
-1. 
-2. 
-3. 
-4. 
-5. 
+0. Java: Initilizing objects with parameters in the constructor
+1. Path files / web links
+2. The console
+3. Prints name 
+4. Doesn't appear anyways as it is not printed, just returned
+5. Java - executing a pmethod with parameters that belong to a different class
  ...
 
 INVESTIGATIVE APPROACH:

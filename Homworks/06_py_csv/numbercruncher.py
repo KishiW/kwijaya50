@@ -41,14 +41,14 @@ def rand(filename):  # sets up the randomization
         n += y
         
     radm = (math.trunc((random.random() * 998)))/10
-    print (radm)
     
     job = ""
     percentvalues = list(temp.values())
 
-    for i in range(len(keys)):
+    for i in range(len(keys)): # goes through the dictionary and ends the loop when it is less than or equal to the given percentage
         if radm <= percentvalues[i]:
             job = keys[i]
+            break
     
     return job
         
