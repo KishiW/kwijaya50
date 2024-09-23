@@ -9,7 +9,6 @@ app = Flask(__name__)             #create instance of class Flask
 def hello_world():
     print("about to print __name__...")
     print(__name__)               #where will this go?
-    return "No hablo queso!"
+    return "No hablo queso!" #will go to console
 
 app.run()
-
