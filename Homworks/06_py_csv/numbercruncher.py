@@ -1,5 +1,11 @@
-## Heading
-# start 10:27
+# Kishi Wijaya
+# TummyAKE
+# SoftDev
+# Title
+# description
+
+# 2024-09-17
+# Time: start 10:33-10:59
 
 from pprint import pprint
 import math

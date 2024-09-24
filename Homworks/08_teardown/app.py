@@ -1,4 +1,11 @@
-# your heading here
+# Kishi Wijaya
+# TummyAKE
+# SoftDev
+# Title
+# description
+
+# 2024-09-20
+# Time: start 10:33-10:59
 
 '''
 DISCO:

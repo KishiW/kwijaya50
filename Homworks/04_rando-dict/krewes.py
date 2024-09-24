@@ -1,4 +1,4 @@
-# Eva Black
+# Kishi Wijaya
 # TummyAKE
 # SoftDev
 # Python Dictionaries and Random Selection
