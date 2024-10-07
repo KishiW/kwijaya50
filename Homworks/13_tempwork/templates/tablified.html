@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 
+	Mark Ma
+	Ghidorah
+	SoftDev
+	K13 - HTML, CSV, and Jinja
+	2024-09-29
+	time spent: 0.5 
+-->
+
+<html>
+
+	<head>
+		<title> My Favorite Occupation Site </title>
+	</head>
+
+	<p>
+	Team Name: Ghidorah <br>
+	Roster: Mark, Quanjun, Kishi <br>
+	</p>
+
+	<h2>
+		Here is a random occupation: {{ rand_occupation[0] }} <a href={{ rand_occupation[1] }}>Link</a> 
+	</h2>
+	
+	<body>
+		<table>
+		{% for key, value in table.items() %}
+		<tr>
+		<td>{{key}}</td>
+		<td>{{value[0]}}</td>
+		<td> <a href={{value[1]}}>Link</a> </td>
+		</tr>
+		{% endfor %}
+		</table>
+	</body>
+
+</html>
