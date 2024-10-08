@@ -1,4 +1,5 @@
-# Clyde 'Thluffy' Sinclair
+# Kishi "wawa" Wijaya
+# Hungry
 # SoftDev
 # October 2024
 
@@ -41,36 +42,36 @@ PROTIP: Insert your own in-line comments
 
 
 
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/", methods=['GET'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
-    print("***DIAG: request obj ***")
+    print("***DIAG: request obj ***") # Empty Dictionary
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
     print("***DIAG: request.args['username']  ***")
-    print(request.args['username']) # this will probably cause an error if the username input doesn't exist
-    print("***DIAG: request.headers ***")
-    print(request.headers)
+    # print(request.args['username']) # this will cause an error if the username value doesn't exist
+    # print("***DIAG: request.headers ***")
+    # print(request.headers)
     return render_template( 'login.html' ) # should work if login.html exists
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth", methods=['GET'])
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
-    print("***DIAG: request obj ***")
+    print("***DIAG: request obj ***")# Dictionary now has username in it
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    print("***DIAG: request.args['username']  ***")
-    print(request.args['username'])
+    print("***DIAG: request.args['username']  ***") 
+    print(request.args['username']) # Will work as we input a username in the disp_loginpage function
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Waaaa hooo HAAAH"  #response to a form submission - the function will work but will not yet display username 
+    return request.args['username']  #response to a form submission - the function will work but will not yet display username 
 
 
     
