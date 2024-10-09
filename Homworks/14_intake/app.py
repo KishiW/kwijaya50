@@ -1,7 +1,6 @@
-# Kishi "wawa" Wijaya
-# Hungry
-# SoftDev
-# October 2024
+# Naomi, Nia, Anastasia
+#   Peaches & Mangos
+#   Oct 7 2024
 
 # import conventions:
 # list most general first (standard python library)
@@ -40,38 +39,36 @@ PROTIP: Insert your own in-line comments
    understand what is going on.
 '''
 
-
-
-@app.route("/", methods=['GET'])
+@app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
-    print("***DIAG: request obj ***") # Empty Dictionary
+    print("***DIAG: request obj ***")
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
     print("***DIAG: request.args['username']  ***")
-    # print(request.args['username']) # this will cause an error if the username value doesn't exist
-    # print("***DIAG: request.headers ***")
-    # print(request.headers)
-    return render_template( 'login.html' ) # should work if login.html exists
+    # print(request.args['username'])
+    print("***DIAG: request.headers ***")
+    print(request.headers)
+    return render_template( 'login.html' )
 
 
-@app.route("/auth", methods=['GET'])
+@app.route("/auth" , methods=['GET', 'POST'])
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
-    print("***DIAG: request obj ***")# Dictionary now has username in it
+    print("***DIAG: request obj ***")
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    print("***DIAG: request.args['username']  ***") 
-    print(request.args['username']) # Will work as we input a username in the disp_loginpage function
+    print("***DIAG: request.args['username']  ***")
+    print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return request.args['username']  #response to a form submission - the function will work but will not yet display username 
+    return request.args['username']  #response to a form submission
 
 
     
