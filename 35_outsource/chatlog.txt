@@ -1,0 +1,23 @@
+User: Your team has been tasked with creating a collaborative storytelling website where users can contribute to stories. The main features of the site should include:
+
+Users must register to access the site.
+Once logged in, users can either start a new story or add to an existing one.
+When adding to a story, users are shown only the latest update, not the whole story.
+After contributing to a story, users are not allowed to contribute to it again.
+Users can provide a title and some starting text when creating a new story.
+Logged-in users will be able to read any stories they have contributed to directly from their homepage.
+Flask will be used as the web framework, and SQLite3 will handle the database. The website should be fully functional, with all components in place and working as described.
+
+COPILOT: Absolutely! Here's how we can adjust the website to meet your specifications:
+
+User Registration: We'll implement a registration system where users must create an account with a username and password. This ensures only registered users can access the features.
+
+New Story Creation: Once logged in, users will have the option to start a new story by providing a title and an initial text. The database will save this information, and the story will appear on their homepage.
+
+Adding to Existing Stories: When users choose to add to an existing story, they will only see the latest update, which keeps the story focused on the current state. The input form will allow users to contribute some additional text.
+
+Contribution Limitations: To ensure that users can only contribute once to a particular story, we’ll keep track of each user’s contributions in a database table. If they try to contribute to a story they've already added to, they’ll be blocked from doing so.
+
+Homepage with User Contributions: After logging in, users will land on their homepage, which will display all the stories they’ve contributed to. Each story will show only the latest update, and the user can choose to view or add to any story they have not yet contributed to.
+
+With these changes, your collaborative storytelling platform will allow users to engage with existing stories or start new ones while making sure they can't contribute more than once to any given story.
